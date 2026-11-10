@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVANSHSHI DEEP ENTERPRISES LLP</title>
+<style>
+:root {
+  --navy:#071b35;
+  --gold:#d6ad58;
+  --light:#f4f7fb;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#26364a;line-height:1.6}
+a{text-decoration:none}
+header{
+ background:var(--navy);color:white;padding:18px 7%;
+ display:flex;justify-content:space-between;align-items:center;
+ flex-wrap:wrap;gap:15px;border-bottom:2px solid var(--gold)
+}
+.logo{font-weight:800;font-size:19px;letter-spacing:1px}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;font-size:14px}
+.hero{
+ min-height:540px;padding:75px 8%;display:flex;align-items:center;
+ color:white;
+ background:linear-gradient(90deg,#06172feF,#06172f80),
+ url("assets/solar-1.jpg") center/cover
+}
+.hero-content{max-width:650px}
+.tag{color:var(--gold);letter-spacing:3px;font-weight:bold;font-size:13px}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.15;margin:18px 0}
+h1 span{color:var(--gold)}
+.hero p{font-size:17px;color:#e4eaf2}
+.btn{
+ display:inline-block;padding:13px 23px;margin:22px 8px 0 0;
+ border-radius:4px;font-weight:bold;background:var(--gold);color:var(--navy)
+}
+.btn-outline{background:transparent;border:1px solid white;color:white}
+section{padding:70px 8%}
+.heading{text-align:center;margin-bottom:38px}
+.heading small{color:#a77b2e;letter-spacing:3px;font-weight:bold}
+.heading h2{font-size:34px;color:var(--navy);margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{width:100%;height:350px;object-fit:cover;border-radius:8px}
+.about h2{font-size:32px;color:var(--navy);margin:12px 0}
+.services{background:var(--light)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{
+ background:white;padding:28px;border-radius:8px;
+ border-bottom:3px solid var(--gold);box-shadow:0 5px 20px #0000000c
+}
+.service-card h3{color:var(--navy);margin:12px 0}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.gallery-grid img{
+ width:100%;height:290px;object-fit:cover;border-radius:8px;
+ background:#e7edf5
+}
+.why{background:var(--navy);color:white}
+.why .heading h2{color:white}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.why h3{color:var(--gold);margin:10px}
+.enquiry{background:var(--light)}
+.form-box{
+ max-width:750px;margin:auto;background:white;padding:30px;
+ border-radius:10px;box-shadow:0 8px 25px #0000000c
+}
+.form-box h3{color:var(--navy);margin-bottom:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+label{font-weight:bold;font-size:14px}
+input,select,textarea{
+ width:100%;padding:13px;border:1px solid #ccd5df;
+ border-radius:5px;font:inherit;background:white
+}
+textarea{min-height:110px;resize:vertical}
+.submit{
+ width:100%;padding:15px;background:#20b866;color:white;
+ border:0;border-radius:5px;font-size:16px;font-weight:bold;
+ cursor:pointer;margin-top:20px
+}
+.contact{background:white}
+.contact-box{
+ max-width:850px;margin:auto;padding:30px;background:var(--light);
+ border-radius:10px
+}
+.contact-box h2{color:var(--navy);margin-bottom:15px}
+.contact-box p{margin:10px 0}
+footer{background:#041326;color:#ccd5df;text-align:center;padding:28px}
+footer strong{color:var(--gold)}
+.float-wa{
+ position:fixed;right:18px;bottom:20px;background:#20b866;color:white;
+ padding:13px 18px;border-radius:30px;font-weight:bold;z-index:10
+}
+@media(max-width:750px){
+ header{justify-content:center;text-align:center}
+ nav{justify-content:center}
+ .about{grid-template-columns:1fr}
+ .service-grid,.why-grid,.gallery-grid{grid-template-columns:1fr}
+ .form-grid{grid-template-columns:1fr}
+ .field.full{grid-column:auto}
+ section{padding:50px 7%}
+ .hero{min-height:500px;padding:55px 7%}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">RAVANSHSHI <span>DEEP</span></div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#enquiry">Enquiry</a>
+  <a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="tag">POWERING A BRIGHTER TOMORROW</div>
+  <h1>Smart Energy.<br><span>Stronger Future.</span></h1>
+  <p>Reliable solar energy, inverter and battery solutions for homes and businesses.</p>
+  <a class="btn" href="#enquiry">SEND ENQUIRY</a>
+  <a class="btn btn-outline" href="#projects">OUR PROJECTS</a>
+ </div>
+</section>
+
+<section id="about">
+ <div class="about">
+  <img src="assets/solar2.jpeg" alt="About Solar">
+  <div>
+   <div class="tag">ABOUT OUR COMPANY</div>
+   <h2>Energy Solutions You Can Trust</h2>
+   <p>RAVANSHSHI DEEP ENTERPRISES LLP provides solar energy, inverter and battery solutions.</p>
+   <p>We aim to help residential and commercial customers find dependable power solutions with professional service.</p>
+   <a class="btn" href="#enquiry">CONTACT US</a>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="services">
+ <div class="heading">
+  <small>WHAT WE OFFER</small>
+  <h2>Our Services</h2>
+ </div>
+ <div class="service-grid">
+  <div class="service-card">
+   <div style="font-size:34px">☀️</div>
+   <h3>Solar Installation</h3>
+   <p>Solar energy solutions for homes and businesses.</p>
+  </div>
+  <div class="service-card">
+   <div style="font-size:34px">🔋</div>
+   <h3>Battery Solutions</h3>
+   <p>Battery options for your power backup requirements.</p>
+  </div>
+  <div class="service-card">
+   <div style="font-size:34px">⚡</div>
+   <h3>Inverter Solutions</h3>
+   <p>Inverter solutions for dependable backup power.</p>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="heading">
+  <small>OUR WORK</small>
+  <h2>Solar Installation Projects</h2>
+  <p>Some glimpses of our installation work.</p>
+ </div>
+
+ <div class="gallery-grid">
+  <img src="assets/solar1.jpeg" alt="Solar project 1">
+  <img src="assets/solar2.jpeg" alt="Solar project 2">
+  <img src="assets/solar3.jpeg" alt="Solar project 3">
+  <img src="assets/solar4.jpeg" alt="Solar project 4">
+ </div>
+</section>
+
+<section class="why">
+ <div class="heading">
+  <small>WHY CHOOSE US</small>
+  <h2>Committed to Better Energy</h2>
+ </div>
+ <div class="why-grid">
+  <div><div style="font-size:34px">🤝</div><h3>Customer Focus</h3><p>Solutions guided by your requirements.</p></div>
+  <div><div style="font-size:34px">☀️</div><h3>Clean Energy</h3><p>Supporting the move towards solar energy.</p></div>
+  <div><div style="font-size:34px">🛠️</div><h3>Service Support</h3><p>Assistance for your power solution needs.</p></div>
+ </div>
+</section>
+
+<section class="enquiry" id="enquiry">
+ <div class="heading">
+  <small>GET IN TOUCH</small>
+  <h2>Send Your Enquiry</h2>
+  <p>Fill in your details. Our WhatsApp enquiry message will open.</p>
+ </div>
+ <div class="form-box">
+  <h3>Customer Enquiry Form</h3>
+  <form id="enquiryForm">
+   <div class="form-grid">
+    <div class="field">
+     <label for="customer">Customer Name *</label>
+     <input id="customer" type="text" placeholder="Enter your name" required>
+    </div>
+    <div class="field">
+     <label for="mobile">Mobile Number *</label>
+     <input id="mobile" type="tel" inputmode="numeric"
+      pattern="[0-9]{10}" maxlength="10"
+      placeholder="10-digit mobile number" required>
+    </div>
+    <div class="field">
+     <label for="city">City / Location *</label>
+     <input id="city" type="text" placeholder="Enter your location" required>
+    </div>
+    <div class="field">
+     <label for="system">Requirement *</label>
+     <select id="system" required>
+      <option value="">Select requirement</option>
+      <option>1 KW Solar System</option>
+      <option>2 KW Solar System</option>
+      <option>3 KW Solar System</option>
+      <option>5 KW Solar System</option>
+      <option>Other Solar System</option>
+      <option>Inverter</option>
+      <option>Battery</option>
+     </select>
+    </div>
+    <div class="field full">
+     <label for="message">Message</label>
+     <textarea id="message" placeholder="Write your requirement here..."></textarea>
+    </div>
+   </div>
+   <button class="submit" type="submit">SUBMIT ENQUIRY ON WHATSAPP</button>
+  </form>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="heading">
+  <small>LET'S CONNECT</small>
+  <h2>Contact Our Team</h2>
+ </div>
+ <div class="contact-box">
+  <h2>RAVANSHSHI DEEP ENTERPRISES LLP</h2>
+  <p><b>Phone:</b> +91 97649 78400</p>
+  <p><b>Address:</b> Ground Floor, Shop No. 2, Hi Tech Old Satpati Road, Palghar, Maharashtra – 401404</p>
+  <p><b>GSTIN:</b> 27ABJFR1511P1ZV</p>
+  <a class="btn" href="tel:+919764978400">CALL NOW</a>
+  <a class="btn" style="background:#20b866;color:white"
+   href="https://wa.me/919764978400" target="_blank">WHATSAPP US</a>
+ </div>
+</section>
+
+<footer>
+ <strong>RAVANSHSHI DEEP ENTERPRISES LLP</strong>
+ <p>Solar | Inverter | Battery Solutions</p>
+ <p>© <span id="year"></span> All Rights Reserved.</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919764978400" target="_blank">WhatsApp</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+ e.preventDefault();
+
+ const name = document.getElementById("customer").value.trim();
+ const mobile = document.getElementById("mobile").value.trim();
+ const city = document.getElementById("city").value.trim();
+ const system = document.getElementById("system").value;
+ const message = document.getElementById("message").value.trim();
+
+ const text =
+  "NEW CUSTOMER ENQUIRY%0A%0A" +
+  "Name: " + encodeURIComponent(name) + "%0A" +
+  "Mobile: " + encodeURIComponent(mobile) + "%0A" +
+  "Location: " + encodeURIComponent(city) + "%0A" +
+  "Requirement: " + encodeURIComponent(system) + "%0A" +
+  "Message: " + encodeURIComponent(message || "Not provided");
+
+ window.open("https://wa.me/919764978400?text=" + text, "_blank");
+});
+</script>
+
+</body>
+</html>
